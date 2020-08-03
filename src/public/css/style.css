@@ -2,6 +2,10 @@ p {
     margin: 10px 0 !important;
 }
 
+i.footer {
+    margin-right: 4px !important;
+}
+
 .login-container {
     width: 400px;
     margin-top: 200px;
@@ -18,8 +22,18 @@ p {
     color: black !important;
 }
 
+.ques-input {
+    margin-top: 10px !important;
+    margin-bottom: 20px !important;
+}
+
+#form {
+    margin-top: 40px !important;
+    margin-bottom: 40px !important;
+}
+
 #countdown {
-    color: #396;
+    color: #0277bd;
     font-weight: 100;
     font-size: 40px;
     margin: 40px 0px 20px;
@@ -37,14 +51,14 @@ p {
 #clockdiv>div {
     padding: 10px;
     border-radius: 3px;
-    background: #00BF96;
+    background: #00bcd4;
     display: inline-block;
 }
 
 #clockdiv div>span {
     padding: 15px;
     border-radius: 3px;
-    background: #00816A;
+    background: #0277bd;
     display: inline-block;
 }
 
