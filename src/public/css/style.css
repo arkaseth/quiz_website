@@ -38,6 +38,10 @@ p {
     display: inline-block;
 }
 
+#signin-box {
+    border: 2px solid red;
+}
+
 smalltext {
     padding-top: 5px;
     font-size: 16px;
