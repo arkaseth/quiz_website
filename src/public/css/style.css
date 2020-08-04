@@ -6,7 +6,8 @@ i.footer {
     margin-right: 4px !important;
 }
 
-.login-container {
+.login-container,
+.rules-container {
     width: 400px;
     margin-top: 200px;
     text-align: center;
