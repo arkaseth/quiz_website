@@ -21,6 +21,7 @@ require("./config/passport")(passport);
 app.use(cors());
 app.use(express.json());
 app.use(routes);
+
 // Handlebars
 app.engine(
   ".hbs",
@@ -70,7 +71,9 @@ if (process.env.NODE_ENV === "development") {
 }
 
 // Form submission
-app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.urlencoded({
+  extended: true
+}));
 
 // Routes
 app.use("/", require("./routes/index"));

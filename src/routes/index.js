@@ -36,6 +36,7 @@ router.post("/submit", (req, res) => {
     let sub = Object.values(req.body);
     let ans = [];
     sub.forEach((opt, idx) => {
+        opt = opt.toLowerCase();
         ans[idx] = opt.split(" ");
     });
     let score = 0;
@@ -43,6 +44,7 @@ router.post("/submit", (req, res) => {
         const corr = await Question.findOne({
             'index': idx
         });
+        corr.answer = corr.answer.toLowerCase();
         let correct = corr.answer.split(" ");
         let res = correct.every((val) => {
             return opt.indexOf(val) >= 0;

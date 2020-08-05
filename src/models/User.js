@@ -24,10 +24,6 @@ const UserSchema = new mongoose.Schema({
         type: String,
         default: Date.now
     },
-    // question: {
-    //     type: mongoose.Schema.Types.ObjectId,
-    //     ref: 'Question'
-    // },
     score: {
         type: Number,
         default: 0
