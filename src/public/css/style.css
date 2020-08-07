@@ -4,6 +4,17 @@ p {
 
 i.footer {
     margin-right: 4px !important;
+    color: #fff;
+}
+
+.footer-copyright {
+    color: #fff;
+}
+
+@media (max-width:1000px) {
+    .page-footer-login {
+        margin-top: 400px;
+    }
 }
 
 .login-container,
@@ -12,6 +23,10 @@ i.footer {
     margin-top: 200px;
     text-align: center;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+.main-body {
+    height: 100vh;
 }
 
 .divider {
@@ -26,6 +41,35 @@ i.footer {
 .ques-input {
     margin-top: 10px !important;
     margin-bottom: 20px !important;
+}
+
+.bgimg {
+    background-image: url('../img/comsoon.jpg');
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    background-position: center;
+    background-size: cover;
+    font-family: "courier new", Courier, monospace;
+    font-size: 25px;
+    margin: 0;
+    color: white;
+}
+
+.middle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.comsoon {
+    margin: auto;
+    width: 40%;
+}
+
+.login-div {
+    height: 100vh;
 }
 
 #form {
@@ -52,20 +96,21 @@ i.footer {
 #clockdiv>div {
     padding: 10px;
     border-radius: 3px;
-    background: #00bcd4;
+    background: #0277bd;
     display: inline-block;
 }
 
 #clockdiv div>span {
     padding: 15px;
     border-radius: 3px;
-    background: #0277bd;
+    background: #0091ea;
     display: inline-block;
 }
 
-/* #signin-box {
-    border: 2px solid green;
-} */
+#signin-box,
+#rules-box {
+    border-radius: 5px;
+}
 
 smalltext {
     padding-top: 5px;

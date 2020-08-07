@@ -10,9 +10,15 @@ const {
 // @desc Login/Landing Page
 // @route GET /
 router.get("/", ensureGuest, (req, res) => {
-    res.render("login", {
-        layout: "login",
-    });
+    if (new Date().getTime() < new Date("aug 14, 2020 20:00:00 GMT+05:30").getTime()) {
+        res.render("comingsoon", {
+            layout: "comingsoon"
+        });
+    } else {
+        res.render("login", {
+            layout: "login",
+        });
+    }
 });
 
 // @desc Dashboard
