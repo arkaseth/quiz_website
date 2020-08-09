@@ -23,9 +23,10 @@ i.footer {
 }
 
 @media (max-width:1000px) {
-    .page-footer-login {
+    /* .page-footer-login {
         margin-top: 400px;
-    }
+    } */
+
 }
 
 .login-container,
@@ -80,9 +81,14 @@ i.footer {
 }
 
 .login-div {
-    height: 100vh;
+    height: 100%;
     background-image: url('../img/login.png');
-
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow: hidden;
+    /* margin-bottom: -20px; */
 }
 
 #form {
