@@ -1,3 +1,7 @@
+html {
+    font-family: 'Montserrat', sans-serif;
+}
+
 p {
     margin: 10px 0 !important;
 }
@@ -9,6 +13,13 @@ i.footer {
 
 .footer-copyright {
     color: #fff;
+}
+
+.page-footer,
+.page-footer-login,
+.page-header,
+.page-header-login {
+    background-color: #f4853a;
 }
 
 @media (max-width:1000px) {
@@ -70,6 +81,8 @@ i.footer {
 
 .login-div {
     height: 100vh;
+    background-image: url('../img/login.png');
+
 }
 
 #form {
