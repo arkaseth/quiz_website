@@ -24,6 +24,9 @@ const UserSchema = new mongoose.Schema({
         type: String,
         default: Date.now
     },
+    submittedAt: {
+        type: String
+    },
     score: {
         type: Number,
         default: 0

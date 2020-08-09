@@ -91,13 +91,21 @@ i.footer {
     /* margin-bottom: -20px; */
 }
 
+.submit-button {
+    background-color: #fa6f13;
+}
+
+.submit-button:hover {
+    background-color: #f4853a;
+}
+
 #form {
     margin-top: 40px !important;
     margin-bottom: 40px !important;
 }
 
 #countdown {
-    color: #0277bd;
+    color: #000000;
     font-weight: 100;
     font-size: 40px;
     margin: 40px 0px 20px;
@@ -115,14 +123,14 @@ i.footer {
 #clockdiv>div {
     padding: 10px;
     border-radius: 3px;
-    background: #0277bd;
+    background: #f86f13;
     display: inline-block;
 }
 
 #clockdiv div>span {
     padding: 15px;
     border-radius: 3px;
-    background: #0091ea;
+    background: #f4853a;
     display: inline-block;
 }
 
