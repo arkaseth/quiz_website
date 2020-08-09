@@ -3,6 +3,9 @@ const mongoose = require("mongoose");
 const QuestionSchema = new mongoose.Schema({
   description: String,
   answer: String,
+  imgurl: {
+    type: String
+  },
   index: {
     type: Number,
     unique: true,

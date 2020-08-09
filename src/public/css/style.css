@@ -91,6 +91,10 @@ i.footer {
     /* margin-bottom: -20px; */
 }
 
+.img-ques {
+    margin: 25px auto 15px auto;
+}
+
 .submit-button {
     background-color: #fa6f13;
 }

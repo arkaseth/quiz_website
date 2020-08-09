@@ -26,6 +26,9 @@
         <label for="{{index}}" class="ques-label">
             <p class="lead desc">{{index}}. {{description}}</p>
         </label>
+        {{#if imgurl}}
+        <img class="img-ques" src="{{imgurl}}" alt="">
+        {{/if}}
         <input name="{{index}}" class="validate ques-input" type="text" id="{{index}}" placeholder="Enter answer">
     </div>
     {{/each}}

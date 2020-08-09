@@ -41,13 +41,23 @@ router.get("/questions/:id", async (req, res) => {
 // create one quiz question
 router.post("/questions", async (req, res) => {
   try {
-    const { description } = req.body;
-    const { answer } = req.body;
-    const { index } = req.body;
+    const {
+      description
+    } = req.body;
+    const {
+      answer
+    } = req.body;
+    const {
+      imgurl
+    } = req.body;
+    const {
+      index
+    } = req.body;
 
     const question = await Question.create({
       description,
       answer,
+      imgurl,
       index,
     });
 
@@ -63,7 +73,11 @@ router.post("/questions", async (req, res) => {
 router.put("/questions/:id", async (req, res) => {
   try {
     const _id = req.params.id;
-    const { description, answer, index } = req.body;
+    const {
+      description,
+      answer,
+      index
+    } = req.body;
 
     let question = await Question.findOne({
       _id,
