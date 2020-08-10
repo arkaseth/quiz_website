@@ -57,6 +57,7 @@ const DB = process.env.DATABASE_URL.replace(
 );
 
 mongoose.connect(DB, {
+  useCreateIndex: true,
   useNewUrlParser: true,
   useUnifiedTopology: true,
   useFindAndModify: false,

@@ -105,6 +105,10 @@ i.footer {
     margin: 25px auto 15px auto;
 }
 
+.finished-main {
+    height: 80vh;
+}
+
 .submit-button {
     background-color: #fa6f13;
 }
