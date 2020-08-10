@@ -1,31 +1,20 @@
 <div class="center-align">
-    <h2>Welcome, {{name}}!</h2>
-    <h3>Let's begin</h3>
-    <h1 id="countdown">Time left:</h1>
-    <div id="clockdiv">
-        <div>
-            <span class="hours" id="hour"></span>
-            <div class="smalltext">Hours</div>
-        </div>
-        <div>
-            <span class="minutes" id="minute"></span>
-            <div class="smalltext">Minutes</div>
-        </div>
-        <div>
-            <span class="seconds" id="second"></span>
-            <div class="smalltext">Seconds</div>
-        </div>
-    </div>
-
-    <p id="demo"></p>
+    <div id="particles-js"></div>
+    <h3>Welcome, {{name}}!</h2>
+        <h5>Let's begin
+    </h3>
+    <h3 id="countdown">Time left:</h1>
+        <h2 id="demo"></h2>
 </div>
 {{#if questions}}
 <form action="/submit" method="POST" id="form">
     {{#each questions}}
     <div class="input-field">
-        <label for="{{index}}" class="ques-label">
-            <p class="lead desc">{{index}}. {{description}}</p>
-        </label>
+        <div>
+            <label for="{{index}}" class="ques-label">
+                <p class="desc">{{index}}. {{description}}</p>
+            </label>
+        </div>
         {{#if imgurl}}
         <img class="img-ques" src="{{imgurl}}" alt="">
         {{/if}}
@@ -42,25 +31,20 @@
 
 <script>
 
-    let deadline = new Date("aug 14, 2020 20:00:00 GMT+05:30").getTime();
+    let deadline = new Date("aug 14, 2020 20:20:00 GMT+05:30").getTime();
 
     let x = setInterval(() => {
 
         let now = new Date().getTime();
         let t = deadline - now;
         // let days = Math.floor(t / (1000 * 60 * 60 * 24));
-        let hours = Math.floor((t % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
         let minutes = Math.floor((t % (1000 * 60 * 60)) / (1000 * 60));
         let seconds = Math.floor((t % (1000 * 60)) / 1000);
-        document.getElementById("hour").innerHTML = hours;
-        document.getElementById("minute").innerHTML = minutes;
-        document.getElementById("second").innerHTML = seconds;
+        document.getElementById("demo").innerHTML = minutes + "m " + seconds + "s";
+
         if (t < 0) {
             clearInterval(x);
-            document.getElementById("demo").innerHTML = "TIME UP";
-            document.getElementById("hour").innerHTML = '0';
-            document.getElementById("minute").innerHTML = '0';
-            document.getElementById("second").innerHTML = '0';
+            document.getElementById("demo").innerHTML = "TIME'S UP";
         }
     }, 1000);
 
@@ -70,3 +54,4 @@
         document.getElementById("form").submit();
     }, ttl);
 </script>
+<script src="/js/particles.min.js"></script>

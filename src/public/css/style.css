@@ -23,8 +23,9 @@ i.footer {
 }
 
 @media (max-width:1000px) {
-    /* .page-footer-login {
-        margin-top: 400px;
+    /* .ques-label {
+        margin-top: 10px !important;
+        padding-bottom: 100px !important;
     } */
 
 }
@@ -41,18 +42,27 @@ i.footer {
     height: 100vh;
 }
 
+.quiz-body {
+    background-color: #1d557a;
+    background-image: linear-gradient(45deg, #1d557a 0%, #1d557a 80%);
+    ;
+    color: #fff;
+    /* background-color: #b61924; */
+}
+
 .divider {
     background-color: red;
 }
 
 .desc {
     font-size: 18px !important;
-    color: black !important;
+    color: #fff;
 }
 
 .ques-input {
     margin-top: 10px !important;
     margin-bottom: 20px !important;
+    color: #fff;
 }
 
 .bgimg {
@@ -103,47 +113,26 @@ i.footer {
     background-color: #f4853a;
 }
 
+#particles-js {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
 #form {
     margin-top: 40px !important;
     margin-bottom: 40px !important;
 }
 
 #countdown {
-    color: #000000;
+    color: #fff;
     font-weight: 100;
     font-size: 40px;
     margin: 40px 0px 20px;
 }
 
-#clockdiv {
-    font-family: sans-serif;
-    color: #fff;
-    display: inline-block;
-    font-weight: 100;
-    text-align: center;
-    font-size: 30px;
-}
-
-#clockdiv>div {
-    padding: 10px;
-    border-radius: 3px;
-    background: #f86f13;
-    display: inline-block;
-}
-
-#clockdiv div>span {
-    padding: 15px;
-    border-radius: 3px;
-    background: #f4853a;
-    display: inline-block;
-}
-
 #signin-box,
 #rules-box {
     border-radius: 5px;
-}
-
-smalltext {
-    padding-top: 5px;
-    font-size: 16px;
 }
