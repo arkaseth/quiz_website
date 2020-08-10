@@ -11,7 +11,7 @@ const {
 // @route GET /
 router.get("/", ensureGuest, (req, res) => {
     if (
-        new Date().getTime() < new Date("aug 04, 2020 20:00:00 GMT+05:30").getTime()
+        new Date().getTime() < new Date("aug 14, 2020 20:00:00 GMT+05:30").getTime()
     ) {
         res.render("comingsoon", {
             layout: "comingsoon",
