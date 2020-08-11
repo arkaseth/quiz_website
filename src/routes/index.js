@@ -2,16 +2,13 @@ const express = require("express");
 const Question = require("../models/Question");
 const User = require("../models/User");
 const router = express.Router();
-const {
-  ensureAuth,
-  ensureGuest
-} = require("../middleware/auth");
+const { ensureAuth, ensureGuest } = require("../middleware/auth");
 
 // @desc Login/Landing Page
 // @route GET /
 router.get("/", ensureGuest, (req, res) => {
   if (
-    new Date().getTime() < new Date("aug 14, 2020 20:00:00 GMT+05:30").getTime()
+    new Date().getTime() < new Date("aug 11, 2020 22:28:00 GMT+05:30").getTime()
   ) {
     res.render("comingsoon", {
       layout: "comingsoon",
@@ -66,7 +63,7 @@ router.post("/submit", (req, res) => {
       score,
       completed: true,
       submittedAt: Date.now(),
-      answers: sub
+      answers: sub,
     });
   }, 1000);
 
