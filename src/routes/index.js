@@ -66,6 +66,7 @@ router.post("/submit", (req, res) => {
       score,
       completed: true,
       submittedAt: Date.now(),
+      answers: sub
     });
   }, 1000);
 

@@ -34,6 +34,9 @@ const UserSchema = new mongoose.Schema({
     completed: {
         type: Boolean,
         default: false
+    },
+    answers: {
+        type: Array
     }
 });
 
