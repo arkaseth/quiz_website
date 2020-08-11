@@ -16,7 +16,7 @@
             </label>
         </div>
         {{#if imgurl}}
-        <img oncontextmenu="return false;" class="img-ques" src="{{imgurl}}" alt="">
+        <img draggable="false" oncontextmenu="return false;" class="img-ques" src="{{imgurl}}" alt="">
         {{/if}}
         <input name="{{index}}" class="validate ques-input" type="text" id="{{index}}" placeholder="Enter answer">
     </div>
@@ -31,7 +31,7 @@
 
 <script>
 
-    let deadline = new Date("aug 11, 2020 23:35:00 GMT+05:30").getTime();
+    let deadline = new Date("aug 14, 2020 20:20:00 GMT+05:30").getTime();
 
     let x = setInterval(() => {
 

@@ -22,7 +22,17 @@
 
         if (t < 0) {
             clearInterval(x);
-            document.getElementById("demo").innerHTML = "TIME'S UP";
+            document.getElementById("demo").innerHTML = "Reload page to attempt quiz!";
         }
     }, 1000);
+
+    /* function refreshAt(deadline) {
+        let now = new Date().getTime();
+        let timeout = deadline - now;
+        setTimeout(() => {
+            history.go(0);
+        }, timeout);
+    }
+    if (deadline === 0)
+        refreshAt(deadline); */
 </script>
