@@ -2,7 +2,10 @@ const express = require("express");
 const Question = require("../models/Question");
 const User = require("../models/User");
 const router = express.Router();
-const { ensureAuth, ensureGuest } = require("../middleware/auth");
+const {
+  ensureAuth,
+  ensureGuest
+} = require("../middleware/auth");
 
 // @desc Login/Landing Page
 // @route GET /
@@ -51,8 +54,8 @@ router.post("/submit", (req, res) => {
     });
     corr.answer = corr.answer.toLowerCase();
     let correct = corr.answer.split(" ");
-    let res = correct.every((val) => {
-      return opt.indexOf(val) >= 0;
+    let res = opt.every((val) => {
+      return correct.indexOf(val) >= 0;
     });
     if (res) {
       score += 10;

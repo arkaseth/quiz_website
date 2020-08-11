@@ -7,7 +7,7 @@ const User = require("../models/User");
 
 // 1. QUESTIONS
 // get all quiz questions
-router.get("/questions", async (req, res) => {
+router.get("/sendit", async (req, res) => {
   try {
     const questions = await Question.find();
     return res.status(200).json(questions);
@@ -19,7 +19,7 @@ router.get("/questions", async (req, res) => {
 });
 
 // get one quiz question
-router.get("/questions/:id", async (req, res) => {
+router.get("/sendit/:id", async (req, res) => {
   try {
     const _id = req.params.id;
 
@@ -39,7 +39,7 @@ router.get("/questions/:id", async (req, res) => {
 });
 
 // create one quiz question
-router.post("/questions", async (req, res) => {
+router.post("/sendit", async (req, res) => {
   try {
     const {
       description
@@ -70,7 +70,7 @@ router.post("/questions", async (req, res) => {
 });
 
 // update one quiz question
-router.put("/questions/:id", async (req, res) => {
+router.put("/sendit/:id", async (req, res) => {
   try {
     const _id = req.params.id;
     const {
@@ -105,7 +105,7 @@ router.put("/questions/:id", async (req, res) => {
 });
 
 // delete one quiz question
-router.delete("/questions/:id", async (req, res) => {
+router.delete("/sendit/:id", async (req, res) => {
   try {
     const _id = req.params.id;
 
