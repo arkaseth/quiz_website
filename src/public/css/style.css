@@ -70,6 +70,12 @@ i.footer {
     width: 100%;
 }
 
+.input-field {
+    background: rgba(8, 59, 94, 0.7);
+    padding: 10px 15px;
+    border-radius: 10px;
+}
+
 .ques-input {
     margin-top: 10px !important;
     margin-bottom: 20px !important;

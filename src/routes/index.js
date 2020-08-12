@@ -2,7 +2,10 @@ const express = require("express");
 const Question = require("../models/Question");
 const User = require("../models/User");
 const router = express.Router();
-const { ensureAuth, ensureGuest } = require("../middleware/auth");
+const {
+  ensureAuth,
+  ensureGuest
+} = require("../middleware/auth");
 
 // @desc Login/Landing Page
 // @route GET /
