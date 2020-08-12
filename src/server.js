@@ -28,6 +28,19 @@ app.engine(
   exphbs({
     defaultLayout: "main",
     extname: ".hbs",
+    helpers: {
+      math: function (lvalue, operator, rvalue) {
+        lvalue = parseInt(lvalue);
+        rvalue = parseInt(rvalue);
+        return {
+          "+": lvalue + rvalue,
+          "-": lvalue - rvalue,
+          "*": lvalue * rvalue,
+          "/": lvalue / rvalue,
+          "%": lvalue % rvalue
+        } [operator];
+      }
+    }
   })
 );
 app.set("view engine", ".hbs");
