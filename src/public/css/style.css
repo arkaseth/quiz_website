@@ -59,6 +59,17 @@ i.footer {
     color: #fff;
 }
 
+.ques-img {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.ques-img img {
+    max-width: 100%;
+    width: 100%;
+}
+
 .ques-input {
     margin-top: 10px !important;
     margin-bottom: 20px !important;

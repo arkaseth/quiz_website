@@ -51,8 +51,8 @@ router.post("/submit", (req, res) => {
     });
     corr.answer = corr.answer.toLowerCase();
     let correct = corr.answer.split(" ");
-    let res = opt.every((val) => {
-      return correct.indexOf(val) >= 0;
+    let res = correct.some((val) => {
+      return opt.indexOf(val) >= 0;
     });
     if (res) {
       score += 10;

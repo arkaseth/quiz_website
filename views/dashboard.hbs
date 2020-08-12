@@ -16,7 +16,9 @@
             </label>
         </div>
         {{#if imgurl}}
-        <img draggable="false" oncontextmenu="return false;" class="img-ques" src="{{imgurl}}" alt="">
+        <div class="ques-img">
+            <img draggable="false" oncontextmenu="return false;" class="img-ques" src="{{imgurl}}" alt="">
+        </div>
         {{/if}}
         <input name="{{index}}" class="validate ques-input" type="text" id="{{index}}" placeholder="Enter answer">
     </div>
