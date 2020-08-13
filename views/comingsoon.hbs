@@ -1,14 +1,14 @@
 <div class="valign-wrapper bgimg">
     <div class="center-align middle">
         <h2>QuizInc presents India Quiz</h1>
-            <p>Begins in...</p>
+            <p id="para">Begins in...</p>
             <hr class="comsoon">
             <h2 id="demo">
     </div>
 </div>
 
 <script>
-    let deadline = new Date("aug 14, 2020 19:59:00 GMT+05:30").getTime();
+    let deadline = new Date("aug 13, 2020 22:30:30 GMT+05:30").getTime();
 
     let x = setInterval(() => {
 
@@ -23,6 +23,7 @@
         if (t < 0) {
             clearInterval(x);
             document.getElementById("demo").innerHTML = `<button type="submit" class="btn submit-button" onClick="history.go(0)">Click here to play!</button>`;
+            document.getElementById("para").innerText = "The time has arrived!"
         }
     }, 1000);
 
