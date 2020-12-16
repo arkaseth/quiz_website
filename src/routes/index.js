@@ -8,7 +8,7 @@ const { ensureAuth, ensureGuest } = require("../middleware/auth");
 // @route GET /
 router.get("/", ensureGuest, (req, res) => {
   if (
-    new Date().getTime() < new Date("dec 20, 2020 19:59:00 GMT+05:30").getTime()
+    new Date().getTime() < new Date("dec 19, 2020 15:59:30 GMT+05:30").getTime()
   ) {
     res.render("comingsoon", {
       layout: "comingsoon",
@@ -65,7 +65,7 @@ router.post("/submit", (req, res) => {
       submittedAt: Date.now(),
       answers: sub,
     });
-  }, 1000);
+  }, 5000);
 
   // console.log(req.user.id);
   res.render("finished");
