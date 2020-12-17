@@ -1,159 +1,157 @@
 html {
-    font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 p {
-    margin: 10px 0 !important;
+  margin: 10px 0 !important;
 }
 
 i.footer {
-    margin-right: 4px !important;
-    color: #fff;
+  margin-right: 4px !important;
+  color: #fff;
 }
 
 .footer-copyright {
-    color: #fff;
+  color: #fff;
 }
 
 .page-footer,
 .page-footer-login,
 .page-header,
 .page-header-login {
-    background-color: #f4853a;
+  background-color: #cb9831;
 }
 
-@media (max-width:1000px) {
-    /* .ques-label {
+@media (max-width: 1000px) {
+  /* .ques-label {
         margin-top: 10px !important;
         padding-bottom: 100px !important;
     } */
-
 }
 
 .login-container,
 .rules-container {
-    /* width: 400px; */
-    margin: 200px auto;
-    text-align: center;
-    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+  /* width: 400px; */
+  margin: 200px auto;
+  text-align: center;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
 }
 
 .main-body {
-    height: 100vh;
+  height: 100vh;
 }
 
 .quiz-body {
-    background-color: #1d557a;
-    background-image: linear-gradient(45deg, #1d557a 0%, #1d557a 80%);
-    ;
-    color: #fff;
-    /* background-color: #b61924; */
+  background-color: #151717;
+  background-image: linear-gradient(45deg, #151717 0%, #151717 80%);
+  color: #fff;
+  /* background-color: #b61924; */
 }
 
 .divider {
-    background-color: red;
+  background-color: #cb9831;
 }
 
 .desc {
-    font-size: 18px !important;
-    color: #fff;
+  font-size: 18px !important;
+  color: #fff;
 }
 
 .ques-img {
-    position: relative;
-    width: 100%;
-    overflow: hidden;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
 }
 
 .ques-img img {
-    max-width: 100%;
-    width: 100%;
+  max-width: 100%;
+  width: 100%;
 }
 
 .input-field {
-    background: rgba(8, 59, 94, 0.7);
-    padding: 10px 15px;
-    border-radius: 10px;
+  background: rgba(2, 20, 32, 0.7);
+  padding: 10px 15px;
+  border-radius: 10px;
 }
 
 .ques-input {
-    margin-top: 10px !important;
-    margin-bottom: 20px !important;
-    color: #fff;
+  margin-top: 10px !important;
+  margin-bottom: 20px !important;
+  color: #fff;
 }
 
 .bgimg {
-    background-image: url('../img/moonlight.png');
-    position: absolute;
-    height: 100vh;
-    width: 100vw;
-    background-position: center;
-    background-size: cover;
-    font-family: "courier new", Courier, monospace;
-    font-size: 25px;
-    margin: 0;
-    color: white;
+  background-image: url("../img/spotlight.jpg");
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  background-position: center;
+  background-size: cover;
+  font-family: "courier new", Courier, monospace;
+  font-size: 25px;
+  margin: 0;
+  color: white;
 }
 
 .middle {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .comsoon {
-    margin: auto;
-    width: 40%;
+  margin: auto;
+  width: 40%;
 }
 
 .login-div {
-    height: 100%;
-    background-image: url('../img/login.png');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    overflow: hidden;
-    /* margin-bottom: -20px; */
+  height: 100%;
+  background-image: url("../img/login.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  overflow: hidden;
+  /* margin-bottom: -20px; */
 }
 
 .img-ques {
-    margin: 25px auto 15px auto;
+  margin: 25px auto 15px auto;
 }
 
 .finished-main {
-    height: 80vh;
+  height: 80vh;
 }
 
 .submit-button {
-    background-color: #fa6f13;
+  background-color: #cb9831;
 }
 
 .submit-button:hover {
-    background-color: #f4853a;
+  background-color: #cc8d10;
 }
 
 #particles-js {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
 }
 
 #form {
-    margin-top: 40px !important;
-    margin-bottom: 40px !important;
+  margin-top: 40px !important;
+  margin-bottom: 40px !important;
 }
 
 #countdown {
-    color: #fff;
-    font-weight: 100;
-    font-size: 40px;
-    margin: 40px 0px 20px;
+  color: #fff;
+  font-weight: 100;
+  font-size: 40px;
+  margin: 40px 0px 20px;
 }
 
 #signin-box,
 #rules-box {
-    border-radius: 5px;
+  border-radius: 5px;
 }
