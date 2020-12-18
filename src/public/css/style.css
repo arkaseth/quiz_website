@@ -19,7 +19,7 @@ i.footer {
 .page-footer-login,
 .page-header,
 .page-header-login {
-  background-color: #cb9831;
+  background-color: #2a99a5;
 }
 
 @media (max-width: 1000px) {
@@ -49,7 +49,7 @@ i.footer {
 }
 
 .divider {
-  background-color: #cb9831;
+  background-color: #2a99a5;
 }
 
 .desc {
@@ -107,7 +107,7 @@ i.footer {
 
 .login-div {
   height: 100%;
-  background-image: url("../img/login.png");
+  background-image: url("../img/login.jpeg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -125,11 +125,11 @@ i.footer {
 }
 
 .submit-button {
-  background-color: #cb9831;
+  background-color: #2a99a5;
 }
 
 .submit-button:hover {
-  background-color: #cc8d10;
+  background-color: #175c64;
 }
 
 #particles-js {
