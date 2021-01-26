@@ -65,7 +65,7 @@ router.post("/submit", (req, res) => {
       submittedAt: Date.now(),
       answers: sub,
     });
-  }, 5000);
+  }, 15000);
 
   // console.log(req.user.id);
   res.render("finished");
