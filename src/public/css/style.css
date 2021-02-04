@@ -22,11 +22,10 @@ i.footer {
   background-color: #2a99a5;
 }
 
-@media (max-width: 1000px) {
-  /* .ques-label {
-        margin-top: 10px !important;
-        padding-bottom: 100px !important;
-    } */
+@media (max-width: 500px) {
+  .bgimg {
+    background-position: 0 0 0 -10px;
+  }
 }
 
 .login-container,
