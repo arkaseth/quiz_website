@@ -94,6 +94,8 @@ i.footer {
 
 .middle {
   position: absolute;
+  background-color: rgba(72, 45, 168, 0.432);
+  border-radius: 10px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
