@@ -19,7 +19,7 @@ i.footer {
 .page-footer-login,
 .page-header,
 .page-header-login {
-  background-color: #2a99a5;
+  background-color: #e68027;
 }
 
 @media (max-width: 500px) {
@@ -33,7 +33,6 @@ i.footer {
   /* width: 400px; */
   margin: 200px auto;
   text-align: center;
-  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
 }
 
 .main-body {
@@ -48,7 +47,7 @@ i.footer {
 }
 
 .divider {
-  background-color: #2a99a5;
+  background-color: #e87613;
 }
 
 .desc {
@@ -80,7 +79,7 @@ i.footer {
 }
 
 .bgimg {
-  background-image: url("../img/monkeymeme.png");
+  background-image: url("../img/school_coming_soon.jpg");
   position: absolute;
   height: 100vh;
   width: 100vw;
@@ -94,7 +93,7 @@ i.footer {
 
 .middle {
   position: absolute;
-  background-color: rgba(72, 45, 168, 0.432);
+  background-color: rgba(232, 200, 86, 0.7);
   border-radius: 10px;
   top: 50%;
   left: 50%;
@@ -108,7 +107,7 @@ i.footer {
 
 .login-div {
   height: 100%;
-  background-image: url("../img/login.jpeg");
+  background-image: url("../img/school_home.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -126,11 +125,11 @@ i.footer {
 }
 
 .submit-button {
-  background-color: #2a99a5;
+  background-color: #fa7400;
 }
 
 .submit-button:hover {
-  background-color: #175c64;
+  background-color: #d46200;
 }
 
 #particles-js {
@@ -155,4 +154,5 @@ i.footer {
 #signin-box,
 #rules-box {
   border-radius: 25px;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
 }
