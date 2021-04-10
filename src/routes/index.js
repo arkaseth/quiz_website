@@ -8,7 +8,7 @@ const { ensureAuth, ensureGuest } = require("../middleware/auth")
 // @route GET /
 router.get("/", ensureGuest, (req, res) => {
   if (
-    new Date().getTime() < new Date("apr 10, 2021 08:59:00 GMT+05:30").getTime()
+    new Date().getTime() < new Date("apr 10, 2021 09:59:00 GMT+05:30").getTime()
   ) {
     res.render("comingsoon", {
       layout: "comingsoon",
